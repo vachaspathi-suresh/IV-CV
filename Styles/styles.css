@@ -1,0 +1,155 @@
+/************ Nav Bar and Title Section ***********/
+@import "nav_title_styles.css";
+
+/********** Main Content **********/
+.ma {
+  background-color: #E8F9FD;
+  margin-right: 5%;
+}
+
+/******** Intro Section *********/
+.introContainer {
+  padding: 5% 15% 7%;
+  text-align: center;
+}
+
+.profilepic {
+  margin: 3%;
+}
+
+.introContainer h2 {
+  font-family: cursive;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #305285;
+  letter-spacing: 2;
+}
+
+.introContainer p {
+  font-family: 'Montserrat', sans-serif;
+  padding: 2% 8%;
+  font-weight: 500;
+  color: #6B6B6A;
+}
+
+/******** Skills Section ********/
+.skillsContainer {
+  background-color: #79DAE8;
+  padding: 3% 15% 7%;
+  text-align: center;
+}
+
+.skillsContainer h2 {
+  color: #366269;
+  font-family: 'PT Serif', serif;
+  font-weight: 700;
+}
+
+.skill {
+  margin: 2%;
+  padding: 2%;
+  text-align: left;
+}
+
+.desp h3 {
+  color: #305285;
+  font-family: "Koulen", cursive;
+  letter-spacing: 1px;
+}
+
+.desp p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.data {
+  margin-top: 10%;
+}
+
+.skill .ico img {
+  width: 100%;
+  height: 100%;
+}
+
+/********* Projects Section *********/
+.card {
+  text-align: center;
+  margin: 0 20%;
+}
+
+.card-header {
+  background-color: #27426B;
+  color: #C6F5C9;
+  font-family: "PT serif", serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.card-body {
+  background-color: #497CC9;
+  color: #F7F2F6;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 10% 10% 0;
+  line-height: 1.8;
+}
+
+.card-body .arrow {
+  text-align: right;
+  font-size: 3rem;
+}
+
+.proj-card {
+  padding: 5%;
+}
+
+.proj-card a {
+  text-decoration: none;
+}
+
+.card:hover {
+  box-shadow: 0 0 12px;
+}
+
+/********* Contact Section *********/
+.contactContainer {
+  background-color: #79DAE8;
+  text-align: center;
+  padding: 3% 25%;
+}
+
+.contactContainer h2 {
+  color: #366269;
+  font-family: 'PT Serif', serif;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.contactContainer p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.contactContainer button {
+  border-width: 0.15rem;
+  font-size: 1.3rem;
+  background-color: #75D2E0;
+  margin: 2%
+}
+
+/********* Footer Section *********/
+footer {
+  background-color: #5496A1;
+  padding-top: 1%;
+  padding-bottom: 1px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0.5%;
+}
+
+footer i {
+  padding: 0.5%;
+}
