@@ -1,0 +1,181 @@
+/************ Nav Bar and Title Section ***********/
+@import "nav_title_styles.css";
+
+/********** Main Content **********/
+.ma {
+  background-color: #e8f9fd;
+  margin-right: 5%;
+}
+
+/******** Intro Section *********/
+.introContainer {
+  padding: 5% 15% 7%;
+  text-align: center;
+}
+
+.profilepic {
+  margin: 3%;
+}
+
+.introContainer h2 {
+  font-family: cursive;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #305285;
+  letter-spacing: 2;
+}
+
+.introContainer p {
+  font-family: "Montserrat", sans-serif;
+  padding: 2% 8%;
+  font-weight: 500;
+  color: #6b6b6a;
+}
+
+/******** Skills Section ********/
+.skillsContainer {
+  background-color: #79dae8;
+  padding: 3% 15% 7%;
+  text-align: center;
+}
+
+.skillsContainer h2 {
+  color: #366269;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+}
+
+.skill {
+  margin: 2%;
+  padding: 2%;
+  text-align: left;
+}
+
+.desp h3 {
+  color: #305285;
+  font-family: "Koulen", cursive;
+  letter-spacing: 1px;
+}
+
+.desp p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.data {
+  margin-top: 10%;
+}
+
+.skill .ico img {
+  width: 100%;
+  height: 100%;
+}
+
+/********* Projects Section *********/
+.card {
+  text-align: center;
+  margin: 0 20%;
+}
+
+.card-header {
+  background-color: #27426b;
+  color: #c6f5c9;
+  font-family: "PT serif", serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.card-body {
+  background-color: #497cc9;
+  color: #f7f2f6;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 10% 10% 0;
+  line-height: 1.8;
+}
+
+.card-body .arrow {
+  text-align: right;
+  font-size: 3rem;
+}
+
+.proj-card {
+  padding: 5%;
+}
+
+.proj-card a {
+  text-decoration: none;
+}
+
+.card:hover {
+  box-shadow: 0 0 12px;
+}
+
+/********* Contact Section *********/
+.contactContainer {
+  background-color: #79dae8;
+  text-align: center;
+  padding: 3% 25%;
+}
+
+.contactContainer h2 {
+  color: #366269;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.contactContainer p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.contactContainer button {
+  border-width: 0.15rem;
+  font-size: 1.3rem;
+  background-color: #75d2e0;
+  margin: 2%;
+}
+
+/********* Footer Section *********/
+footer {
+  background-color: #5496a1;
+  padding-top: 1%;
+  padding-bottom: 1px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0.5%;
+}
+
+footer a:visited,
+footer a:link {
+  color: black;
+  text-decoration: none;
+}
+
+footer i {
+  padding: 0.5%;
+}
+
+.form-control:focus {
+  border-color: #5496a1;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(84, 150, 161, 0.6);
+}
+
+.mail-send-btn:focus {
+  background-color: #2f5f68;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 8px rgba(84, 150, 161, 1);
+}
+
+.mail-send-btn {
+  background-color: #a3d6df;
+  color: black;
+}
+
+.mail-send-btn:hover {
+  background-color: #2f5f68;
+}

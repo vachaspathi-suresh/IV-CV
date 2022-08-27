@@ -1,0 +1,301 @@
+/********** Navigation Bar ***********/
+.sidenav {
+  background-image: linear-gradient(#6BC1CF, #589EA8);
+  position: fixed;
+  text-align: center;
+  height: 100%;
+  width: 5%;
+  top: 0;
+  right: 0;
+  transition: width 1s;
+  z-index: 3;
+}
+
+.sidenav .navbtn {
+  margin-top: 25%;
+}
+
+.sidenav a {
+  visibility: hidden;
+}
+
+.navcont {
+  width: 15%;
+}
+
+.navcont a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #366269;
+  display: block;
+  padding: 5% 0;
+  border-top: 0.5px solid #366269;
+  border-bottom: 0.5px solid #366269;
+  text-decoration: none;
+  /* background-color: #366269; */
+  visibility: visible;
+}
+
+.navcont a:hover {
+  color: #E8F9FD;
+  background-color: #366269;
+  box-shadow: 0 0 7px #1E2122;
+}
+
+.navico {
+  display: inline-block;
+  height: 40px;
+  width: 50%;
+  /* border: 1px solid black; */
+  cursor: pointer;
+}
+
+.navico:hover {
+  width: 53%;
+}
+
+.navcont .navico {
+  width: 15%;
+  position: absolute;
+  right: 5%;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 1s;
+}
+
+.navcont .bar1 {
+  transform: rotate(-50deg) translate(-7px, 6.5px);
+}
+
+.navcont .bar2 {
+  opacity: 0;
+}
+
+.navcont .bar3 {
+  transform: rotate(45deg) translate(-7px, -8.5px);
+}
+
+/*********** Title Section ***********/
+#title {
+  background-color: #79DAE8;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-text {
+  position: absolute;
+  top: 25%;
+  left: 28%;
+  text-align: center;
+  z-index: 3;
+}
+
+.hero-text h1 {
+  color: #366269;
+  font-family: 'PT Serif', serif;
+  line-height: 2;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.hero-text h3 {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.night .hero-text h1 {
+  color: #C6F5C9;
+}
+
+.night .hero-text h3 {
+  color: #37999E;
+}
+
+span.animeI, span.animeV {
+  position: absolute;
+  z-index: 3;
+}
+
+.road {
+  position: absolute;
+  bottom: 0;
+  width: 270%;
+  height: 30%;
+  animation-name: moveroad;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.cycle {
+  position: absolute;
+  bottom: 2%;
+  left: 25%;
+  width: 15%;
+  height: 25%;
+}
+
+.cycle:hover {
+  transform: rotate(-30deg) translateY(-12%);
+}
+
+.night {
+  background-image: url(../res/images/skyN.jpg);
+  /* opacity: 0.5; */
+  background-size: cover;
+}
+
+.sun-moon {
+  display: inline;
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  width: 10%;
+  height: 19%;
+}
+
+.sun-moon:hover {
+  transform: translate(-5px);
+}
+
+.daytonyt {
+  animation-name: daytonyt;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+
+.cloud1 {
+  display: inline;
+  position: absolute;
+  top: 22%;
+  right: 7%;
+  width: 8%;
+  height: 14%;
+  opacity: 0.8;
+}
+
+.cloud2 {
+  display: inline;
+  position: absolute;
+  top: 4%;
+  left: 37%;
+  width: 9%;
+  height: 18%;
+  opacity: 0.8;
+}
+
+.cloud3 {
+  display: inline;
+  position: absolute;
+  top: 44%;
+  left: 3%;
+  width: 7%;
+  height: 12%;
+  opacity: 0.8;
+}
+
+.night .cloud1, .night .cloud2, .night .cloud3 {
+  display: none;
+}
+
+.animeI {
+  animation-name: animeI;
+  animation-duration: 10s;
+  animation-timing-function: ease-in;
+  animation-delay: -7s;
+}
+
+.animeI:hover, .animeV:hover {
+  transform: translateY(-7px);
+}
+
+.animeV {
+  animation-name: animeV;
+  animation-duration: 10s;
+  animation-timing-function: ease-in;
+  animation-delay: -6.5s;
+}
+
+.animeI:active, .animeV:active {
+  animation: none;
+}
+
+@keyframes animeI {
+  0% {
+    transform: translate(-160rem);
+  }
+
+  79% {
+    transform: translate(10px);
+  }
+
+  86% {
+    transform: translate(-5rem);
+  }
+
+  90% {
+    transform: translate(10px);
+  }
+
+  97% {
+    transform: translate(-2rem);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes animeV {
+  0% {
+    transform: translate(0, -160rem);
+  }
+
+  79% {
+    transform: translate(0, 1rem);
+  }
+
+  86% {
+    transform: translate(0, -3rem);
+  }
+
+  90% {
+    transform: translate(0, 1rem);
+  }
+
+  97% {
+    transform: translate(0, -1rem);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes daytonyt {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-175%, -100%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes moveroad {
+  100% {
+    transform: translateX(-50%);
+  }
+}
