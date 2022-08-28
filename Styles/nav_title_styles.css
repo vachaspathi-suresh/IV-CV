@@ -1,6 +1,6 @@
 /********** Navigation Bar ***********/
 .sidenav {
-  background-image: linear-gradient(#6BC1CF, #589EA8);
+  background-image: linear-gradient(#6bc1cf, #589ea8);
   position: fixed;
   text-align: center;
   height: 100%;
@@ -9,6 +9,10 @@
   right: 0;
   transition: width 1s;
   z-index: 3;
+}
+
+.dark .sidenav {
+  background-image: linear-gradient(#211d57, #454457);
 }
 
 .sidenav .navbtn {
@@ -24,7 +28,7 @@
 }
 
 .navcont a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #366269;
   display: block;
@@ -32,14 +36,25 @@
   border-top: 0.5px solid #366269;
   border-bottom: 0.5px solid #366269;
   text-decoration: none;
-  /* background-color: #366269; */
+  /* background-color: #366269;787A91 */
   visibility: visible;
 }
 
+.dark .navcont a {
+  color: #e8f9fd;
+  border-top: 0.5px solid #eeeeee;
+  border-bottom: 0.5px solid #eeeeee;
+}
+
 .navcont a:hover {
-  color: #E8F9FD;
+  color: #e8f9fd;
   background-color: #366269;
-  box-shadow: 0 0 7px #1E2122;
+  box-shadow: 0 0 7px #1e2122;
+}
+
+.dark .navcont a:hover {
+  background-color: #787a91;
+  box-shadow: 0 0 7px #eeeeee;
 }
 
 .navico {
@@ -60,12 +75,20 @@
   right: 5%;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 100%;
   height: 4px;
   background-color: #333;
   margin: 6px 0;
   transition: 1s;
+}
+
+.dark .bar1,
+.dark .bar2,
+.dark .bar3 {
+  background-color: #9496ae;
 }
 
 .navcont .bar1 {
@@ -82,7 +105,7 @@
 
 /*********** Title Section ***********/
 #title {
-  background-color: #79DAE8;
+  background-color: #79dae8;
   height: 600px;
   position: relative;
   overflow: hidden;
@@ -98,28 +121,29 @@
 
 .hero-text h1 {
   color: #366269;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   line-height: 2;
   font-weight: 700;
   font-size: 3rem;
 }
 
 .hero-text h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 2;
   font-weight: 500;
   font-size: 2rem;
 }
 
 .night .hero-text h1 {
-  color: #C6F5C9;
+  color: #c6f5c9;
 }
 
 .night .hero-text h3 {
-  color: #37999E;
+  color: #37999e;
 }
 
-span.animeI, span.animeV {
+span.animeI,
+span.animeV {
   position: absolute;
   z-index: 3;
 }
@@ -202,7 +226,9 @@ span.animeI, span.animeV {
   opacity: 0.8;
 }
 
-.night .cloud1, .night .cloud2, .night .cloud3 {
+.night .cloud1,
+.night .cloud2,
+.night .cloud3 {
   display: none;
 }
 
@@ -213,7 +239,8 @@ span.animeI, span.animeV {
   animation-delay: -7s;
 }
 
-.animeI:hover, .animeV:hover {
+.animeI:hover,
+.animeV:hover {
   transform: translateY(-7px);
 }
 
@@ -224,7 +251,8 @@ span.animeI, span.animeV {
   animation-delay: -6.5s;
 }
 
-.animeI:active, .animeV:active {
+.animeI:active,
+.animeV:active {
   animation: none;
 }
 

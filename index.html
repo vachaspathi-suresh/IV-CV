@@ -2,12 +2,14 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inampudi Vachaspathi-CV</title>
   <link rel="icon" href="res/images/favicon.ico">
   <!-- stylesheets -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <link rel="stylesheet" href="Styles/styles.css">
+  <link rel="stylesheet" href="Styles/index.css">
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -90,7 +92,7 @@
       </div>
     </section>
 
-
+    <!-- Projects -->
     <section id="projects">
       <div class="row projectsContainer">
         <div class="proj-card col-md-6">
@@ -125,7 +127,7 @@
         </div>
     </section>
 
-
+    <!-- Contact Me -->
     <section id="contact">
       <div class="contactContainer">
         <h2>Get In Touch</h2>
@@ -134,15 +136,15 @@
       </div>
     </section>
 
-
+    <!-- Footer -->
     <footer>
-      <p><a href="https://twitter.com/VachaspathiSur1"><i class="fa-brands fa-twitter"></i></a><a href="https://www.instagram.com/one_among_you__/"><i class="fa-brands fa-instagram-square"></i></a><a href="https://www.linkedin.com/in/vachaspati-suresh-inampudi-13aa8a201/"><i class="fa-brands fa-linkedin"></i></a><a href="https://github.com/vachaspathi-suresh"><i class="fa-brands fa-github"></i></a></p>
+      <p><a href="https://twitter.com/VachaspathiSur1"><i class="fa-brands fa-twitter"></i></a><a href="https://www.instagram.com/one_among_you__/"><i class="fa-brands fa-instagram-square"></i></a><a href="https://www.linkedin.com/in/vachaspati-suresh-inampudi-13aa8a201/"><i class="fa-brands fa-linkedin"></i></a><a href="https://github.com/vachaspathi-suresh"><i class="fa-brands fa-github"></i></a><a href="mailto:ivsuresh03@gmail.com"><i class="fa-solid fa-envelope"></i></a></p>
       <p>© Copyright Juggernaut</p>
     </footer>
 
   </div>
 
-
+  <!-- Contact Dialog -->
   <div class="modal fade" id="contactMeModel" tabindex="-1" aria-labelledby="contactMeModelLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -150,30 +152,36 @@
           <h5 class="modal-title" id="contactMeModelLabel">Send message</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <form id="contact-form" target="_top">
+        <form action="https://formsubmit.co/ivsuresh03@gmail.com" method="post" id="contact-form">
+          <div class="modal-body">
             <div class="mb-3">
               <label for="recipient-name" class="col-form-label">Recipient:</label>
-              <input disabled value="ivsuresh03@gmail.com" type="text" class="form-control form-control-success" id="recipient-name">
+              <input disabled value="ivsuresh03@gmail.com" type="text" class="form-control form-control-disable" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="sender-mail" class="col-form-label">Mail ID:</label>
+              <input required type="email" name="email" class="form-control form-control-disable" id="sender-mail" placeholder="Your Mail ID">
             </div>
             <div class="mb-3">
               <label for="sender-name" class="col-form-label">Your Name:</label>
-              <input type="text" class="form-control form-control-success" id="sender-name">
+              <input required type="text" name="name" class="form-control" id="sender-name" placeholder="Your Name">
             </div>
             <div class="mb-3">
               <label for="message-subject" class="col-form-label">Subject:</label>
-              <input type="text" class="form-control form-control-success" id="message-subject">
+              <input required type="text" name="_subject" class="form-control" id="message-subject" placeholder="Subject of Message">
             </div>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://vachaspathi-suresh.github.io/IV-CV/pages/thankyou.html">
             <div class="mb-3">
               <label for="message-text" class="col-form-label">Message:</label>
-              <textarea class="form-control" id="message-text"></textarea>
+              <textarea required class="form-control" name="message" id="message-text" placeholder="Enter Your Message"></textarea>
             </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" id="send-mail-btn" class="mail-send-btn btn btn-success">Send message</button>
-        </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" id="send-mail-btn" class="mail-send-btn btn btn-success">Send message</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -183,7 +191,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="scrp.js" charset="utf-8"></script>
+  <script src="scripts.js" charset="utf-8"></script>
 </body>
 
 </html>
