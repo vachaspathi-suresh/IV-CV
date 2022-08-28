@@ -29,7 +29,19 @@
   font-family: "Montserrat", sans-serif;
   padding: 2% 8%;
   font-weight: 500;
-  color: #6b6b6a;
+  color: #4e4e4c;
+}
+
+.dark .introContainer {
+  background-color: #0f044c;
+}
+
+.dark .introContainer h2 {
+  color: #c6f5c9;
+}
+
+.dark .introContainer p {
+  color: #f3f0de;
 }
 
 /******** Skills Section ********/
@@ -68,6 +80,22 @@
 .skill .ico img {
   width: 100%;
   height: 100%;
+}
+
+.dark .skillsContainer {
+  background-color: #141e61;
+}
+
+.dark .skillsContainer h2 {
+  color: #c6f5c9;
+}
+
+.dark .skillsContainer .desp h3 {
+  color: #37999e;
+}
+
+.dark .skillsContainer .desp p {
+  color: #f3f0de;
 }
 
 /********* Projects Section *********/
@@ -111,6 +139,14 @@
   box-shadow: 0 0 12px;
 }
 
+.dark .projectsContainer {
+  background-color: #0f044c;
+}
+
+.dark .projectsContainer .card-body {
+  background-color: #29265d;
+}
+
 /********* Contact Section *********/
 .contactContainer {
   background-color: #79dae8;
@@ -135,7 +171,48 @@
   border-width: 0.15rem;
   font-size: 1.3rem;
   background-color: #75d2e0;
+  border-color: #366269;
   margin: 2%;
+}
+
+.contactContainer button:hover {
+  background-color: #366269;
+}
+
+.contactContainer button:focus {
+  background-color: #366269;
+  border-color: #366269;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 8px rgba(54, 98, 105, 1);
+}
+
+.dark .contactContainer {
+  background-color: #141e61;
+}
+
+.dark .contactContainer h2 {
+  color: #c6f5c9;
+}
+
+.dark .contactContainer p {
+  color: #f3f0de;
+}
+
+.dark .contactContainer button {
+  background-color: #141e61;
+  border-color: #366269;
+  color: #93b2b7;
+}
+
+.dark .contactContainer button:hover {
+  background-color: #366269;
+  color: #f3f0de;
+}
+
+.dark .contactContainer button:focus {
+  background-color: #366269;
+  border-color: #366269;
+  color: #f3f0de;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 8px rgba(54, 98, 105, 1);
 }
 
 /********* Footer Section *********/
@@ -160,6 +237,22 @@ footer i {
   padding: 0.5%;
 }
 
+.dark footer {
+  background-color: #0f174a;
+}
+
+.dark footer p {
+  color: #f3f0de;
+}
+
+.dark footer a:visited,
+.dark footer a:link {
+  color: #d5edd7;
+  text-decoration: none;
+}
+
+/************** Contact Dialog Section **************/
+
 .form-control:focus {
   border-color: #5496a1;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
@@ -178,4 +271,28 @@ footer i {
 
 .mail-send-btn:hover {
   background-color: #2f5f68;
+}
+
+.dark .modal-content {
+  background-color: #203f6ef3;
+  color: #f3f0de;
+}
+
+.dark .modal-content .btn-close {
+  background-color: #f3f0de;
+  padding: 0.25em;
+}
+
+.dark .modal-content .form-control {
+  background-color: #cccccc;
+}
+
+.dark .modal-content .form-control-disable {
+  background-color: #969696;
+}
+
+.dark .modal-content .form-control:focus {
+  border-color: rgb(243, 240, 222);
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1),
+    0 0 10px rgba(243, 240, 222, 0.8);
 }

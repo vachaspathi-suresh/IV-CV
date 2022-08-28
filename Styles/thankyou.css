@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: #79dae8;
+}
+
+.thankyou-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20vh 0;
+  padding: 0.1em 2em;
+  background-color: #f3f0de;
+  border: 0.3em solid #ded8b6;
+  border-radius: 5%;
+}
+
+h1 {
+  color: #1e3960;
+  /* padding: 0.3em; */
+  font-family: cursive;
+}
+
+a {
+  padding: 1em;
+  align-self: flex-end;
+}

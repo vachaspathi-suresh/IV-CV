@@ -16,9 +16,13 @@ $(".sun-moon").on("click", function () {
     if ($("#title").hasClass("night")) {
       $(".road").attr("src", "res/images/roadN.png");
       $(".sun-moon").attr("src", "res/images/moon.png");
+      $("body").addClass("dark");
+      localStorage.setItem("current-theme", "dark");
     } else {
       $(".road").attr("src", "res/images/roadM.png");
       $(".sun-moon").attr("src", "res/images/sun.png");
+      $("body").removeClass("dark");
+      localStorage.setItem("current-theme", "light");
     }
   }, 1700);
 
@@ -27,13 +31,22 @@ $(".sun-moon").on("click", function () {
   }, 3200);
 });
 
-$("#send-mail-btn").click(function () {
-  $("#contact-form").attr(
-    "action",
-    "mailto:ivsuresh03@gmail.com?subject=" +
-      $("#message-subject").val() +
-      "&body=" +
-      $("#message-text").val()
-  );
-  $("#fr1").submit();
-});
+const x = localStorage.getItem("current-theme");
+if (!!x) {
+  if (x === "dark") {
+    $("#title").toggleClass("night");
+    if ($("#title").hasClass("night")) {
+      $(".road").attr("src", "res/images/roadN.png");
+      $(".sun-moon").attr("src", "res/images/moon.png");
+      $("body").addClass("dark");
+      localStorage.setItem("current-theme", "dark");
+    } else {
+      $(".road").attr("src", "res/images/roadM.png");
+      $(".sun-moon").attr("src", "res/images/sun.png");
+      $("body").removeClass("dark");
+      localStorage.setItem("current-theme", "light");
+    }
+  }
+} else {
+  localStorage.setItem("current-theme", "light");
+}
